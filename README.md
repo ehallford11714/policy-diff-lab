@@ -6,7 +6,7 @@
 
 **DiD / event-study workbench for policy and product launches: synthetic panels, classic 2x2 DiD, pre-trend checks, markdown reports.**
 
-Package: `policydiff` · Product **P11** in the causal research suite.
+Package: `policydiff` - Product **P11** in the causal research suite.
 
 ## Install
 
