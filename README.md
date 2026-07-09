@@ -14,6 +14,7 @@ Package: `policydiff` · Product **P11** in the causal research suite.
 cd PolicyDiffLab
 pip install -e ".[dev]"
 pip install -e ".[streamlit]"
+# Optional: pip install -e ../CausalIVSuite
 ```
 
 ## Quick start
