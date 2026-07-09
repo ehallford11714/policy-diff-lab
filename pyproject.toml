@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "policydiff"
+version = "0.1.0"
+description = "PolicyDiff Lab — DiD / event-study workbench for policy & product launches"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Research" }]
+dependencies = [
+  "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+streamlit = ["streamlit>=1.28", "pandas>=2.0"]
+dev = ["pytest>=7.4"]
+# Optional sibling: pip install -e ../CausalIVSuite  → uses causaliv.did
+
+[project.scripts]
+policydiff = "policydiff.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
